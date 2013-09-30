@@ -8,11 +8,11 @@ set :repository,  "git@github.com:chloerei/writings.git"
 set :scm, "git"
 set :branch, "master"
 
-set :user, "rei"
-set :deploy_to, "/home/rei/#{application}"
-set :use_sudo, false
+set :user, "root"
+set :deploy_to, "/var/mirrors/#{application}"
+set :use_sudo, true
 
-role :web, "writings.io"
+role :web, "writings.bdfzer.com"
 role :app, "writings.io"
 role :db,  "writings.io", :primary => true
 
